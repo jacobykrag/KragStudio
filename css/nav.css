@@ -1,0 +1,72 @@
+nav {
+    position: fixed;
+    background-color: #1b1b1b;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5% 0 5%;
+    z-index: 1;
+}
+
+nav .nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 20px 0 20px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: blueviolet;
+}
+
+#menu {
+    display: none;
+}
+
+.before {
+    content: url(/svg/circle.svg);
+    background-color: #c1c1c1;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.after {
+    content: url(/svg/circle.svg);
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.stop {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    height: 100px;
+    transition: all 0.3s;
+}
+
+.start {
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.start a {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+}

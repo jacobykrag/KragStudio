@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1162px) {
+    .desktop {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    #menu img {
+        width: 35px;
+    }
+
+    nav .nav {
+        display: block;
+    }
+
+    section {
+        padding: 250px 2% 5% 2%;
+    }
+    .sectionIntroduction {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 5%;
+    }
+
+    button {
+        margin-bottom: 25px;
+    }
+
+    footer summary {
+        justify-content: flex-start;
+    }
+}
