@@ -436,8 +436,14 @@ aside p {
     justify-content: flex-start;
 }
 
-.sectionllustrations img {
+.illustrations img {
     max-width: 30%;
     border-radius: 15px;
     padding: 0.5%;
+}
+
+.illustrations2 img {
+    max-width: 45%;
+    padding: 0.5%;
+    border-radius: 15px;
 }
