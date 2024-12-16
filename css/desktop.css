@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1800px) {
+    section {
+        padding: 5% 25% 5% 25%;
+    }
+
+    /* ------------------------------------ - ----------------------------------- */
+    
+    .sectionJourney aside {
+        max-width: 700px;
+    }
+    
+    .sectionJourney .object {
+        max-width: 1000px;
+    }
+}

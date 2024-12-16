@@ -8,8 +8,12 @@
 }
 
 body {
-    background-color: black;
+    background-color: #000b11;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                    Text:                                   */
+/* -------------------------------------------------------------------------- */
 
 h1,
 h2,
@@ -48,10 +52,14 @@ p {
     font-weight: 200;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                  buttons:                                  */
+/* -------------------------------------------------------------------------- */
+
 button {
     background-color: white;
     color: black;
-    border: none;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     padding: 15px 32px;
     display: inline-block;
@@ -68,8 +76,9 @@ button a {
 }
 
 button:hover {
-    background-color: blueviolet;
-    color: white;
+    background: rgba(52, 52, 52, 0.85);
+    border: 1px solid rgb(255, 255, 255);
+    color: beige;
     cursor: pointer;
 }
 
@@ -81,17 +90,28 @@ a {
 }
 
 a:hover {
-    color: blueviolet;
+    color: rgb(0, 251, 251);
 }
+
+svg {
+    transition: all 0.5s;
+}
+
+svg:hover {
+    stroke: rgb(0, 251, 251);;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Sections                                  */
+/* -------------------------------------------------------------------------- */
 
 section {
-    padding: 5% 15% 5% 15%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 5% 10% 5% 10%;
 }
 
-#background-video {
+/* ------------------------------------ - ----------------------------------- */
+
+.sectionIntroduction #background-video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -101,7 +121,7 @@ section {
     top: 0;
     bottom: 0;
     z-index: -1;
- }
+}
 
 .sectionIntroduction {
     padding-top: 15%;
@@ -109,7 +129,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap-reverse;
 }
 
@@ -117,28 +137,250 @@ section {
     margin-bottom: 50px;
 }
 
-.profile {
-    border-radius: 100%;
+.sectionIntroduction .object {
+    max-width: 300px;
 }
+
+.sectionIntroduction .profile {
+    border-radius: 100%;
+    max-width: 250px;
+    border: solid 5px white;
+}
+
+/* ------------------------------------ - ----------------------------------- */
 
 .sectionAbout {
-    background-color: black;
+    background-color: rgb(15, 15, 15);
 }
 
+.sectionAbout .about {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+}
 
+.sectionAbout .about .text {
+    max-width: 500px;
+    padding: 2%;
+}
 
-.about {
+.sectionAbout .links {
+    background-color: rgb(15, 15, 15);
+    border-radius: 5px;
+    padding: 2%;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+.sectionAbout .object2 {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+/* ------------------------------------ - ----------------------------------- */
+
+.sectionJourney {
+    background-color: #000b11;
+    padding: 15% 2% 2% 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionJourney aside {
+    max-width: 400px;
+}
+
+.sectionJourney .object {
+    max-width: 500px;
+}
+
+.sectionJourney h4 {
+    margin-bottom: 20px;
+}
+
+.sectionJourney .artstation {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    width: 200px;
+    transition: all 0.3s;
+}
+
+aside p {
+    margin: 30px 0 30px 0;
+}
+
+.sectionJourney .artstation img {
+    max-width: 20px;
+}
+
+.artstation:hover {
+    background: rgba(52, 52, 52, 0.85);
+    border: 1px solid rgb(255, 255, 255);
+    color: beige;
+}
+
+/* ------------------------------------ - ----------------------------------- */
+
+.skills {
+    margin: 50px auto 50px auto;
+    background: linear-gradient(90deg, rgba(121, 9, 82, 0.3) 0%, rgba(0, 212, 255, 0.3) 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(238, 0, 255);
+    padding: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.skills img {
+    max-width: 50px;
+}
+
+/* ------------------------------------ - ----------------------------------- */
+
+.sectionGallery hr {
+    margin: 50px auto 100px auto;
+    border: 6px solid white;
+    width: 100px;
+}
+
+.sectionGallery h4 {
+    background: linear-gradient(90deg, rgba(0, 212, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1%;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    margin: 50px 0 50px 0;
+}
+
+.sectionGallery .mech {
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 20px auto 0 auto;
+    border: solid white 2px;
+}
+
+.sectionGallery .environments {
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 20px auto 0 auto;
+    border: solid white 2px;
+}
+
+.sectionGallery .largerShowcase {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionGallery .mechs {
+    border-radius: 20px;
+    max-width: 40%;
+    margin: 20px;
+    border: solid white 2px;
+}
+
+.sectionGallery .imagesRoulette {
+    max-width: 300px;
+}
+
+.sectionGallery .showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ------------------------------------ - ----------------------------------- */
+
+.sectionContact {
+    background-color: white;
+    height: 100vh;
+    padding-top: 300px;
+}
+.sectionContact h1 {
+    color: black;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.sectionContact h2 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.sectionContact h3 {
+    color: black;
+    text-transform: uppercase;
+}
+.sectionContact h4 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.sectionContact a {
+    margin: 0 20px 0 20px;
+}
+
+.contactArtstation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 3px solid rgb(255, 255, 255);
+    padding: 20px;
+    height: 75px;
+    width: 200px;
+    transition: all 0.3s;
+}
+
+.contactArtstation:hover {
+    background: rgba(52, 52, 52, 0.85);
+    border: 3px solid beige;
+    color: beige;
+}
+
+.contactArtstation img {
+    max-width: 100%;
+    height: 20px;
+}
+
+.regularInformation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30%;
+    flex-wrap: wrap;
+}
+
+.contactInformation {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about .text {
-    max-width: 500px;
-    padding: 0% 5% 5% 0%;
-}
-
-.links {
-    max-width: 500px;
-    padding: 0% 0% 5% 0%;
-}
+/* ------------------------------------ - ----------------------------------- */

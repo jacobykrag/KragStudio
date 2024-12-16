@@ -12,48 +12,61 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/desktop.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
 </head>
 
 <body>
     <nav>
-        <a id="logo" href="#"><img src="img/Logo.png" width="250px" alt="Krag Studio"></a>
+        <a id="logo" href="/"><img src="img/Logo.png" width="250px" alt="Krag Studio"></a>
         <div class="nav">
-            <a class="desktop" href="#" style="font-weight: 600;">Home</a>
-            <a class="desktop" href="#">3D Work</a>
-            <a class="desktop" href="#">Graphic design</a>
-            <a class="desktop" href="#">About</a>
-            <a class="desktop" href="#">Contact</a>
-            <a class="desktop" href="#" target="_blank"><img src="svg/facebook.svg" alt="facebook"></a>
-            <a class="desktop" href="#" target="_blank"><img src="svg/instagram.svg" alt="instagram"></a>
+            <a class="desktop" href="/" style="font-weight: 600;">Home</a>
+            <a class="desktop" href="/3d.html">3D Work</a>
+            <a class="desktop" href="/graphics.html">Graphic design</a>
+            <a class="desktop" href="/contact.html">Contact</a>
+            <a class="desktop" href="https://www.facebook.com/WhiteIronWolf/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>
+            <a class="desktop" href="https://www.instagram.com/jacobykrag/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
             <a href="#" id="menu"><img class="before"></a>
         </div>
     </nav>
     <div id="mobile" class="stop">
-        <a href="#">3d Work</a>
-        <a href="#">Graphic design</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="/3d.html">3d Work</a>
+        <a href="/graphics.html">Graphic design</a>
+        <a href="/contact.html">Contact</a>
     </div>
     <main id="home">
         <section class="sectionIntroduction">
             <video autoplay muted loop id="background-video">
                 <source src="video/The Forest.mp4" type="video/mp4">
             </video>
-            <img src="/img/Transparent1.png" width="60%" alt="">
+            <img class="object" src="/img/3d/Cube.png" alt="">
             <aside>
                 <h4>3d Artist | Illustrator | UI Designer</h4>
                 <h1>Jacob Krag</h1>
-                <img class="profile" src="img/JacobKrag.JPG" width="250px" alt="Jacob Krag">
+                <img class="profile" src="img/JacobKrag.JPG" alt="Jacob Krag">
                 <h3>Portfolio</h3>
             </aside>
 
         </section>
         <section class="sectionAbout">
-            <h2>About me</h2>
             <div class="about">
                 <div class="text">
+                    <h2>About me</h2>
                     <h3>Hey my name is Jacob 👋</h3>
                     <p>I’m a skilled multimedia designer and web developer, as well as a self-taught 3D artist with a
                         real
@@ -76,8 +89,9 @@
                 <div class="links">
 
                     <h3>This is my work 👇</h3>
-                    <button>3D work</button>
-                    <button>Graphic design</button>
+                    <a href="/3d.html"><button>3D work</button></a>
+                    <a href="/graphics.html"><button>Graphic design</button></a>
+                    <img class="object2" src="/img//3d/Mech.png" alt="">
                 </div>
             </div>
         </section>
@@ -86,25 +100,36 @@
     <footer>
         <h2>Are you lost on the site 🤔</h2>
         <div class="social">
-            <a href="#" target="_blank"><img src="svg/facebook.svg" alt="facebook"></a>
-            <a href="#" target="_blank"><img src="svg/instagram.svg" alt="instagram"></a>
+            <a class="desktop" href="https://www.facebook.com/WhiteIronWolf/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>
+            <a class="desktop" href="https://www.instagram.com/jacobykrag/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
         </div>
         <summary>
             <div>
                 <h5>Home</h5>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
             </div>
             <div>
                 <h5>Work</h5>
-                <a href="#">3D work</a>
-            </div>
-            <div>
-                <h5>About</h5>
-                <a href="#">About Krag Studio</a>
+                <a href="/3d.html">3D work</a>
+                <a href="/graphics.html">Graphic design</a>
             </div>
             <div>
                 <h5>Contact</h5>
-                <a href="#">Contact Krag Studio</a>
+                <a href="/contact.html">Contact Krag Studio</a>
             </div>
         </summary>
     </footer>

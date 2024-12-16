@@ -1,4 +1,9 @@
-@media only screen and (max-width: 1162px) {
+@media only screen and (max-width: 1230px) {
+    
+    /* -------------------------------------------------------------------------- */
+    /*                                   Navbar                                   */
+    /* -------------------------------------------------------------------------- */
+    
     .desktop {
         display: none;
     }
@@ -13,22 +18,86 @@
         display: block;
     }
 
+    /* -------------------------------------------------------------------------- */
+    /*                                  sections:                                 */
+    /* -------------------------------------------------------------------------- */
+
     section {
-        padding: 250px 2% 5% 2%;
-    }
-    .sectionIntroduction {
-        justify-content: center;
+        padding: 100px 2% 100px 2%;
     }
 
-    footer {
-        padding: 5%;
+    .sectionIntroduction {
+        padding-top: 250px;
+        justify-content: space-around;
     }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                   footer:                                   */
+    /* -------------------------------------------------------------------------- */
+
+    footer {
+        padding: 100px 5% 100px 5%;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                   buttons:                                  */
+    /* -------------------------------------------------------------------------- */
 
     button {
         margin-bottom: 25px;
     }
 
+}
+
+@media only screen and (max-width: 535px) {
+
+    .sectionJourney {
+        padding-top: 200px;
+    }
+
+    
+    .sectionJourney .object {
+        max-width: 100%;
+    }
+
+    .sectionContact a {
+        margin: 50px 50px 50px 0;
+    }
+
+    /* ------------------------------------ - ----------------------------------- */
+
+    .skills {
+        margin: 2%;
+    }
+
+    .skills img {
+        max-width: 30px;
+    }
+    .sectionGallery .mech {
+        max-width: 100%;
+        margin: 50px 0 50px 0;
+    }
+
+    .sectionGallery .mechs {
+        max-width: 100%;
+        margin: 50px 0 50px 0;
+    }
+
+    .sectionGallery .showcase {
+        justify-content: space-around;
+    }
+
+    .sectionGallery .imagesRoulette {
+        max-width: 100%;
+    }
+    
+    
+    /* -------------------------------------------------------------------------- */
+    /*                                   footer:                                   */
+    /* -------------------------------------------------------------------------- */
+    
     footer summary {
         justify-content: flex-start;
     }
+
 }

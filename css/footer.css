@@ -23,6 +23,11 @@ footer summary div {
     padding: 5%;
 }
 
+footer summary a {
+    display: block;
+    margin-bottom: 30px;
+}
+
 footer .social {
     display: flex;
     justify-content: center;

@@ -22,7 +22,7 @@ nav a {
 }
 
 nav a:hover {
-    color: blueviolet;
+    color: rgb(0, 255, 251);
 }
 
 #menu {
