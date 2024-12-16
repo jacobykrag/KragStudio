@@ -242,7 +242,7 @@ aside p {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgb(238, 0, 255);
-    padding: 1%;
+    padding: 2%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -384,3 +384,59 @@ aside p {
 }
 
 /* ------------------------------------ - ----------------------------------- */
+
+.sectionllustrations {
+    padding-top: 200px;
+    background-color: #E6E6E6;
+}
+
+.sectionllustrations h1 {
+    color: black;
+    font-size: 55px;
+    margin: 50px 0 50px 0;
+}
+
+.sectionllustrations h2 {
+    color: black;
+    font-size: 55px;
+    margin: 50px 0 50px 0;
+}
+
+.sectionllustrations h4 {
+    background: rgb(0, 0, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 1%;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    margin: 50px 0 50px 0;
+}
+
+.sectionllustrations span {
+    font-weight: 400;
+    color: beige;
+    font-style: italic;
+    text-transform: none;
+}
+
+.sectionllustrations p {
+    color: black;
+    margin: 50px 0 50px 0;
+    max-width: 600px;
+}
+
+.illustrations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.sectionllustrations img {
+    max-width: 30%;
+    border-radius: 15px;
+    padding: 0.5%;
+}
