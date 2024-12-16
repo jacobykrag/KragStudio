@@ -318,7 +318,7 @@ aside p {
 .sectionContact {
     background-color: white;
     height: 100vh;
-    padding-top: 300px;
+    padding-top: 150px;
 }
 .sectionContact h1 {
     color: black;
@@ -374,7 +374,7 @@ aside p {
 .regularInformation {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30%;
+    padding-bottom: 20%;
     flex-wrap: wrap;
 }
 
