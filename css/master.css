@@ -20,7 +20,6 @@ h2,
 h3 {
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 h1 {
@@ -33,6 +32,7 @@ h2 {
 }
 
 h3 {
+    font-size: 22px;
     text-transform: capitalize;
 }
 
@@ -44,7 +44,6 @@ h4 {
 h5 {
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 30px;
 }
 
 p {
@@ -53,7 +52,7 @@ p {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                  buttons:                                  */
+/*                        buttons and links:                                  */
 /* -------------------------------------------------------------------------- */
 
 button {
@@ -89,20 +88,17 @@ a {
     transition: color 0.2s;
 }
 
-a:hover {
-    color: rgb(0, 251, 251);
-}
-
 svg {
     transition: all 0.5s;
 }
 
+a:hover,
 svg:hover {
-    stroke: rgb(0, 251, 251);;
+    color: rgb(0, 251, 251);
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                  Sections                                  */
+/*                                 Sections:                                  */
 /* -------------------------------------------------------------------------- */
 
 section {
@@ -153,6 +149,11 @@ section {
     background-color: rgb(15, 15, 15);
 }
 
+.sectionAbout h2,
+.sectionAbout h3 {
+    margin-bottom: 30px;
+}
+
 .sectionAbout .about {
     display: flex;
     justify-content: space-around;
@@ -175,10 +176,7 @@ section {
 
 .sectionAbout .object2 {
     display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 30px auto;
     max-width: 300px;
 }
 
@@ -196,13 +194,16 @@ section {
     max-width: 500px;
 }
 
+aside h2,
+aside h3,
+aside h4,
+aside p {
+    margin-bottom: 30px;
+}
+
 .sectionJourney .object {
     max-width: 100%;
     max-height: 600px;
-}
-
-.sectionJourney h4 {
-    margin-bottom: 20px;
 }
 
 .sectionJourney .artstation {
@@ -219,10 +220,6 @@ section {
     transition: all 0.3s;
 }
 
-aside p {
-    margin: 30px 0 30px 0;
-}
-
 .sectionJourney .artstation img {
     max-width: 20px;
 }
@@ -235,7 +232,13 @@ aside p {
 
 /* ------------------------------------ - ----------------------------------- */
 
-.skills {
+.skillset {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+
+.skills, .skills2 {
     margin: 50px auto 50px auto;
     background: linear-gradient(90deg, rgba(121, 9, 82, 0.3) 0%, rgba(0, 212, 255, 0.3) 100%);
     border-radius: 10px;
@@ -250,7 +253,12 @@ aside p {
     max-width: 700px;
 }
 
-.skills img {
+.skills2 {
+    background: rgba(17, 17, 17, 0.9);
+    border: 3px solid beige;
+}
+
+.skills img, .skills2 img {
     max-width: 50px;
 }
 
@@ -276,24 +284,12 @@ aside p {
     margin: 50px 0 50px 0;
 }
 
-.sectionGallery .mech {
-    border-radius: 20px;
-    max-width: 90%;
-    margin: 20px auto 0 auto;
-    border: solid white 2px;
-}
-
+.sectionGallery .mech,
 .sectionGallery .environments {
     border-radius: 20px;
     max-width: 90%;
-    margin: 20px auto 0 auto;
+    margin: 0 auto 0 auto;
     border: solid white 2px;
-}
-
-.sectionGallery .largerShowcase {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .sectionGallery .mechs {
@@ -301,6 +297,17 @@ aside p {
     max-width: 40%;
     margin: 20px;
     border: solid white 2px;
+}
+
+.sectionGallery .environments {
+    margin: 0 auto 20px auto;
+}
+
+
+.sectionGallery .largerShowcase {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .sectionGallery .imagesRoulette {
@@ -320,24 +327,20 @@ aside p {
     height: 100vh;
     padding-top: 150px;
 }
+
 .sectionContact h1 {
     color: black;
     font-size: 55px;
     font-weight: bolder;
+    margin-bottom: 30px;
 }
 
-.sectionContact h2 {
-    color: black;
-    text-transform: uppercase;
-}
-
-.sectionContact h3 {
-    color: black;
-    text-transform: uppercase;
-}
+.sectionContact h2,
+.sectionContact h3,
 .sectionContact h4 {
     color: black;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .sectionContact a {
@@ -385,20 +388,24 @@ aside p {
 }
 
 /* ------------------------------------ - ----------------------------------- */
+.sectionllustrationsIntro {
+    padding-top: 15%;
+    background-color: #fafafa;
+}
+
+.sectionllustrationsIntro h1, .sectionllustrationsIntro h3 , .sectionllustrationsIntro p, .sectionllustrationsIntro b {
+    color: #111111;
+    margin-bottom: 30px;
+}
 
 .sectionllustrations {
     padding-top: 200px;
     background-color: #E6E6E6;
 }
 
-.sectionllustrations h1 {
-    color: black;
-    font-size: 55px;
-    margin: 50px 0 50px 0;
-}
-
+.sectionllustrations h1,
 .sectionllustrations h2 {
-    color: black;
+    color: #111111;
     font-size: 55px;
     margin: 50px 0 50px 0;
 }
@@ -425,7 +432,7 @@ aside p {
 }
 
 .sectionllustrations p {
-    color: black;
+    color: #111111;
     margin: 50px 0 50px 0;
     max-width: 600px;
 }

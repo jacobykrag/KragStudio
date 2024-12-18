@@ -8,7 +8,7 @@ nav {
     align-items: center;
     height: 100px;
     padding: 0 5% 0 5%;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav .nav {
@@ -63,6 +63,7 @@ nav a:hover {
     justify-content: center;
     flex-direction: column;
     transition: all 0.3s;
+    z-index: 1;
 }
 
 .start a {

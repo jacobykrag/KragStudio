@@ -23,7 +23,7 @@ footer summary div {
     padding: 5%;
 }
 
-footer summary a {
+footer summary a, footer summary h5 {
     display: block;
     margin-bottom: 30px;
 }
