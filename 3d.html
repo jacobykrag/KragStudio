@@ -76,7 +76,8 @@
                     highlights my ability to create immersive 3D visuals
                     and collaborate in a creative environment.</p>
                 <h3>Follow my work on artstation:</h3>
-                <a class="artstation" target="_blank" href="https://www.artstation.com/jacob_krag">Artstation<img src="/img/icons/Artstation.png" alt=""></a>
+                <a class="artstation" target="_blank" href="https://www.artstation.com/jacob_krag">Artstation<img
+                        src="/img/icons/Artstation.png" alt=""></a>
             </aside>
         </section>
         <h3 class="skillset">My skillset as a 3D artist:</h3>
@@ -119,6 +120,78 @@
             <div class="largerShowcase">
                 <img class="environments" src="/img/3d/largerPics/theScene.jpg" alt="" loading="lazy">
                 <img class="environments" src="/img/3d/largerPics/oldRuins.jpg" alt="" loading="lazy">
+            </div>
+            <hr>
+            <div class="workflow">
+                <h2>My 3D Workflow</h2>
+                <h4>Step by step:</h4>
+                <h3>1. Modeling the Asset</h3>
+                <p>My 3D workflow is a step-by-step process that ensures clean models, efficient UVs, and high-quality
+                    textures. It starts with <strong>modeling the asset</strong> in Blender, where I focus on creating
+                    clean, optimized geometry that balances detail with performance. Whether it’s hard surface or
+                    organic modeling, I make sure the topology is well-structured for unwrapping and texturing later.
+                </p>
+                <div class="workflow">
+                    <img class="imagesRoulette" src="/img/3d/workflow/Wireframe.png" alt="" loading="lazy">
+                    <img class="imagesRoulette" src="/img/3d/workflow/UV_Layout.png" alt="" loading="lazy">
+                </div>
+                <h3>2. Marking Seams</h3>
+                <p>Once the modeling is complete, I move on to <strong>marking seams</strong> on the model. This step is
+                    crucial for defining how the mesh will be cut into UV islands, ensuring that the unwrapped UVs are
+                    both logical and efficient.</p>
+                <h3>3. UV Unwrapping</h3>
+                <p>After the seams are set, I <strong>unwrap the UVs</strong>, paying close
+                    attention to making the best use of the available texture space while maintaining consistent
+                    <strong>texel density</strong> across the entire model.
+                </p>
+
+                <div class="workflow">
+                    <img class="imagesRoulette" src="/img/3d/workflow/Seams.png" alt="" loading="lazy">
+                    <img class="imagesRoulette" src="/img/3d/workflow/UV_Stretching.jpg" alt="" loading="lazy">
+                </div>
+
+                <h3>4. Applying a Checker Map and Baking a Material ID Map</h3>
+
+                <p>To check for any potential issues, I apply a <strong>checker map</strong> to the UVs. This visual
+                    guide helps me spot any areas where stretching or distortion might occur, and I make adjustments to
+                    the UV layout as needed to eliminate those problems. Once the UVs are clean and ready, I bake a
+                    <strong>Material ID map</strong> in Blender. This map assigns different colors to various parts of
+                    the model, making it much easier to isolate and apply materials later in the texturing process.
+                </p>
+
+                <div class="workflow">
+                    <img class="imagesRoulette" src="/img/3d/workflow/CheckerMap.png" alt="" loading="lazy">
+                    <img class="imagesRoulette" src="/img/3d/workflow/ColorSetup.png" alt="" loading="lazy">
+                    <img class="imagesRoulette" src="/img/3d/workflow/Library_lamp_MaterialID.png" alt=""
+                        loading="lazy">
+                </div>
+                <h3>5. Texturing in Substance Painter</h3>
+                <p>The next step is bringing the model into <strong>Substance Painter</strong>, where I set up my
+                    texturing workflow. I import the model and the baked maps, organizing them in a way that allows me
+                    to efficiently build detailed, high-quality textures. Substance Painter is where I bring the model
+                    to life, adding materials, details, and effects to make it look polished and realistic.</p>
+
+                <div class="workflow">
+                    <img class="highlight" src="/img/3d/workflow/SubstancePainterID.png" alt="" loading="lazy">
+                    <img class="highlight" src="/img/3d/workflow/SubstancePainter.png" alt="" loading="lazy">
+                </div>
+
+                <h3>6. Exporting and Integration</h3>
+
+                <p>Once the texturing is complete, I export all the necessary texture maps—like <strong>albedo</strong>,
+                    <strong>roughness</strong>, <strong>metallic</strong>, and <strong>normal maps</strong>—ensuring
+                    they are optimized for the target platform or engine. From there, I integrate the model into a game
+                    engine like Unreal or Unity or prepare it for rendering in another application.
+                </p>
+
+                <h3>7. Final Thoughts</h3>
+                <p>This methodical process allows me to create visually appealing and technically sound assets, ready
+                    for use in any 3D pipeline.</p>
+
+                <div class="workflow">
+                    <img class="highlight" src="/img/3d/workflow/LibraryLamp.png" alt="" loading="lazy">
+                </div>
+
             </div>
             <hr>
         </section>

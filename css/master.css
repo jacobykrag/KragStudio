@@ -238,7 +238,8 @@ aside p {
 }
 
 
-.skills, .skills2 {
+.skills,
+.skills2 {
     margin: 50px auto 50px auto;
     background: linear-gradient(90deg, rgba(121, 9, 82, 0.3) 0%, rgba(0, 212, 255, 0.3) 100%);
     border-radius: 10px;
@@ -258,7 +259,8 @@ aside p {
     border: 3px solid beige;
 }
 
-.skills img, .skills2 img {
+.skills img,
+.skills2 img {
     max-width: 50px;
 }
 
@@ -318,6 +320,23 @@ aside p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.workflow .imagesRoulette {
+    max-width: 45%;
+}
+
+.workflow .highlight {
+    max-width: 100%;
+}
+
+.workflow h3 {
+    margin: 30px 0 30px 0;
+    text-transform: none;
+}
+
+.workflow p {
+    margin-bottom: 30px;
 }
 
 /* ------------------------------------ - ----------------------------------- */
@@ -393,7 +412,10 @@ aside p {
     background-color: #fafafa;
 }
 
-.sectionllustrationsIntro h1, .sectionllustrationsIntro h3 , .sectionllustrationsIntro p, .sectionllustrationsIntro b {
+.sectionllustrationsIntro h1,
+.sectionllustrationsIntro h3,
+.sectionllustrationsIntro p,
+.sectionllustrationsIntro b {
     color: #111111;
     margin-bottom: 30px;
 }
