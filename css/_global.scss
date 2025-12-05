@@ -1,0 +1,86 @@
+* {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$main: #04D1AF;
+$secondColor: white;
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 1120px;
+$mac: 1440px;
+
+body {
+    background-color: black;
+    color: $secondColor;
+    letter-spacing: 1px;
+
+    a {
+        color: $secondColor;
+        text-decoration: none;
+        transition: .5s;
+
+        &:hover {
+            color: $main;
+        }
+
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1.7;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+        font-weight: 500;
+        line-height: 1.7;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.7;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.7;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    max-width: $mac;
+    padding: 0 25px;
+}
+
+
+
+.socials {
+    transition: .5s;
+
+    &:hover {
+        stroke: #04D1AF;
+    }
+}

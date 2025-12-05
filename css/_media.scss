@@ -1,0 +1,28 @@
+@media (max-width: $mobile) {
+    section.home {
+        margin: 200px 0 0 0;
+    }
+}
+
+@media (max-width: $tablet) {
+    nav .routes .nav-link {
+        display: none;
+    }
+
+    nav .menu {
+        display: block;
+    }
+}
+
+@media (max-width: $mac) {
+    nav {
+        width: 90%;
+    }
+}
+
+@media (min-width: #{ $tablet + 1 }) {
+    nav .menu {
+        display: none;
+    }
+
+}
