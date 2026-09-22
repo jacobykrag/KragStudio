@@ -17,7 +17,7 @@ template: `
         </div>
         <div class="contactInfo">
             <h2>FAB:</h2>
-            <a href="https://www.fab.com/sellers/Krag%20Studio" target="_blank">Open store page</a>
+            <a href="https://www.fab.com/sellers/Krag%20Studio" target="_blank"><button><i class="fa-solid fa-store"></i> Explore store</button></a>
         </div>
     </section>
 </main>
