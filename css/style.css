@@ -261,9 +261,14 @@ main.not-found img {
   margin: 0 auto;
 }
 
-@media (max-width: 576px) {
-  section.home {
-    margin: 200px 0 0 0;
+@media (min-width: 769px) {
+  nav .menu {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  nav {
+    width: 90%;
   }
 }
 @media (max-width: 1200px) {
@@ -279,13 +284,9 @@ main.not-found img {
     display: block;
   }
 }
-@media (max-width: 1440px) {
-  nav {
-    width: 90%;
-  }
-}
-@media (min-width: 769px) {
-  nav .menu {
-    display: none;
+@media (max-width: 576px) {
+  section.home {
+    margin: 150px 0;
+    gap: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

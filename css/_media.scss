@@ -1,6 +1,12 @@
-@media (max-width: $mobile) {
-    section.home {
-        margin: 200px 0 0 0;
+@media (min-width: #{ $tablet + 1 }) {
+    nav .menu {
+        display: none;
+    }
+}
+
+@media (max-width: $mac) {
+    nav {
+        width: 90%;
     }
 }
 
@@ -20,15 +26,9 @@
     }
 }
 
-@media (max-width: $mac) {
-    nav {
-        width: 90%;
+@media (max-width: $mobile) {
+    section.home {
+        margin: 150px 0;
+        gap: 50px;
     }
-}
-
-@media (min-width: #{ $tablet + 1 }) {
-    nav .menu {
-        display: none;
-    }
-
 }
