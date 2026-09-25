@@ -5,4 +5,10 @@ section.home {
     margin: 550px 0;
     gap: 100px;
     width: 90%;
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
